@@ -88,7 +88,7 @@ function printTable(){
 <hr />			
 <h1>Code for 6th</h1>
 	<cfset stringwithHTML = "<div>Hi there I like HTML</div><br /><strong>This is bold</strong>" />
-	<cfset stringwithHTMLRemoved = trim(ReReplaceNoCase(stringwithHTML, "<[^[ ]][^>]*>", "", "ALL")) />
+	<cfset stringwithHTMLRemoved = trim(ReReplaceNoCase(stringwithHTML, "<[^[:space:]][^>]*>", "", "ALL")) />
 	<cfoutput>
 			#stringwithHTML#<br />
 			#stringwithHTMLRemoved#																						 
